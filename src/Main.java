@@ -5,20 +5,22 @@ import static java.lang.System.*;
 public class Main {
     public static void main(String[] args) {
         AlunoEnsinoMedio alunoEnsinoMedio = new AlunoEnsinoMedio();
-        Professor professor = new Professor();
+        AlunoEnsinoSuperior alunoEnsinoSuperior = new AlunoEnsinoSuperior();
 
-        alunoEnsinoMedio.setNome("Davi Favaro");
-        alunoEnsinoMedio.teste = 9;
-        alunoEnsinoMedio.prova = 10;
+        alunoEnsinoMedio.nome = "Jose";
+        alunoEnsinoMedio.teste = 8;
+        alunoEnsinoMedio.prova = 9;
 
-        out.println(alunoEnsinoMedio.getNome());
-        out.println(alunoEnsinoMedio.getMedia());
+        alunoEnsinoSuperior.nome = "Davi";
+        alunoEnsinoSuperior.teste = 10;
+        alunoEnsinoSuperior.prova = 8;
 
-        professor.setNome("Oswaldo");
-        professor.setSalario(2000);
+        out.println("Aluno do ensino medio: ");
+        out.println("Nome: " + alunoEnsinoMedio.nome);
+        out.println("Média: " + alunoEnsinoMedio.getMedia());
 
-        out.println(professor.getNome());
-        out.println(professor.getInss());
-        out.println(professor.getSalarioLiquido());
+        out.println("Aluno do ensino Superior: ");
+        out.println("Nome: " + alunoEnsinoSuperior.nome);
+        out.println("Média: " + alunoEnsinoSuperior.getMedia());
     }
 }

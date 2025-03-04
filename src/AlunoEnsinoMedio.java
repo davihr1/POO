@@ -1,7 +1,5 @@
-public class AlunoEnsinoMedio extends Pessoa {
-    double teste, prova;
-
-    double getMedia() {
+public class AlunoEnsinoMedio extends Aluno {
+    public double getMedia() {
         return (teste + prova)/2;
     }
 }
